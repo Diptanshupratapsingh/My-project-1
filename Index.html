@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment5</title>
+    <style>
+        body{
+            background-image: url("https://images.pexels.com/photos/7344534/pexels-photo-7344534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;   
+            margin: 0;
+        }
+        .maindiv{
+          margin: auto;
+          /* position: relative;
+                top: 50%;
+                left: 50%; */
+        }
+        .maindiv>div>img{
+          height: 390px;
+          background-color:rgba(21, 21, 88, 0.514) ;  
+          border-radius: 15px;
+        }
+        .maindiv>div{
+          border-radius: 15px;
+        }
+      
+        #img{
+          height: 200px;
+         width: 100%;
+         position: relative;
+         
+        }
+
+        #form{
+            height: 350px;
+            display: block;
+        }
+        #form>h1{
+            color: white;
+        }
+        body>div{
+            display: inline;
+            width: 600px;
+        }
+        .maindiv{
+          width: 300px;
+          height: 200px;
+          position: absolute;
+          display: flex;
+          
+        }
+        #form{
+          background-color: rgba(21, 21, 88, 0.637);
+          padding: 20px;
+          
+        }
+        #form>form>input{
+          background-color: rgba(21, 21, 88, 0); 
+          border: none;
+          /* text-decoration: underline; */
+          color: white;
+          font-size: larger;
+          border-bottom: 2px solid white;
+
+        }
+        #form>button{
+          background-color: rgb(73, 141, 236);
+          color: white;
+          padding: 5px;
+          border-radius: 5px;
+          float: left;
+        }
+        #form>p{
+          text-decoration: underline;
+          color: white;
+          float: right;
+        }
+       
+        
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <div id="img">
+        <img src="https://images.pexels.com/photos/30860562/pexels-photo-30860562/free-photo-of-cozy-coffee-shop-vibes-with-laptop-and-book.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
+      </div>
+      <div id="form">
+          <h1>Create Account</h1>
+        <form >
+          <input
+            type="text"
+            placeholder="Full Name"
+            maxlength="20"
+            pattern="[a-zA-Z ]+"
+            required
+          />
+          <br>
+          <br>
+          <input
+            type="email"
+            placeholder="Email Address"
+            maxlength="50"
+            required
+          />
+          <br>
+          <br>
+          <input
+            type="tel"
+            placeholder="Phone number - Optional"
+            maxlength="10"
+            pattern="[0-9]+"
+            required
+          />
+          <br>
+          <br>
+          <input
+            type="password"
+            placeholder="Password"
+            maxlength="12"
+            minlength="8"
+            required
+          />
+          <br>
+          <br>
+          <input
+          type="password"
+          placeholder="Confirm Password"
+          maxlength="12"
+          minlength="8"
+          required
+        />
+        </form>
+        <br>
+        
+        <button>SIGN-UP NOW </button>
+        <P>I have already an account</P>
+      </div>
+    </div>
+   
+  </body>
+</html>
